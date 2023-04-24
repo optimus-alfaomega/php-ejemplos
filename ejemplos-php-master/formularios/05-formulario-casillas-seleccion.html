@@ -1,0 +1,32 @@
+<!-- Ejemplo de recogida de datos a través de un formulario html y envío de los datos
+	En este ejemplo probamos las casillas de selección o checkbox para que el usuario escoja el tipo de música que le gusta.
+	Posteriormente se muestran las preferencias que ha elegido.
+	
+	Ejemplo realizado por Óscar Abad Folgueira: http://www.oscarabadfolgueira.com y https://www.dinapyme.com
+ -->
+	
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo formulario - Casillas de Selección - Checkbox</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Dinos el tipo de música que te gusta</h1>
+	<form method="post" action="05-formulario-casillas-seleccion.php">
+		Nombre:
+		<input type="text" name="nombre" required>
+		<br />
+		<input type="checkbox" name="heavy" value="heavy">Heavy
+		<br />
+		<input type="checkbox" name="rock" value="rock">Rock
+		<br />
+		<input type="checkbox" name="pop" value="pop">Pop
+		<br />
+		<input type="checkbox" name="punk" value="punk">Punk
+		
+		<br />
+		<button type="submit" name="enviar" value="enviar">Enviar</button>
+	</form>
+</body>
+</html>

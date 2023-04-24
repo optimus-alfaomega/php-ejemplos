@@ -1,0 +1,32 @@
+<!-- Ejemplo de recogida de datos a través de un formulario html y envío de los datos
+	En este ejemplo probamos los botones de radio para que el usuario escoja solo una opción de las disponibles.
+	Posteriormente se muestra la opción que ha seleccionado.
+	
+	Ejemplo realizado por Óscar Abad Folgueira: http://www.oscarabadfolgueira.com y https://www.dinapyme.com
+ -->
+	
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo formulario - Radio Buttons</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>¿Qué tipo de música te gusta más?</h1>
+	<form method="post" action="06-formulario-botones-radio.php">
+		Tu nombre:
+		<input type="text" name="nombre" required>
+		<br />
+		<input type="radio" name="tipo_musica" value="heavy" required>Heavy
+		<br />
+		<input type="radio" name="tipo_musica" value="rock">Rock
+		<br />
+		<input type="radio" name="tipo_musica" value="pop">Pop
+		<br />
+		<input type="radio" name="tipo_musica" value="punk">Punk
+		
+		<br />
+		<button type="submit" name="enviar" value="enviar">Enviar</button>
+	</form>
+</body>
+</html>

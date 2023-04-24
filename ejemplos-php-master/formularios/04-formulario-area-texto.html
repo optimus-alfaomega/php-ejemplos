@@ -1,0 +1,23 @@
+<!-- Ejemplo de recogida de datos a través de un formulario html y envío de los datos
+	al fichero php correspondiente para procesarlos y mostrar resultado 
+	En este ejemplo utilizamos un área de texto.
+	
+	Ejemplo realizado por Óscar Abad Folgueira: http://www.oscarabadfolgueira.com y https://www.dinapyme.com
+ -->
+	
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo formulario - Área de texto</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>DINOS EN QUÉ PODEMOS MEJORAR</h1>
+	<form method="post" action="04-formulario-area-texto.php">
+		<textarea name="opinion" cols="50" rows="6">
+		</textarea>
+		<br />
+		<button type="submit" name="enviar" value="enviar">Enviar</button>
+	</form>
+</body>
+</html>
